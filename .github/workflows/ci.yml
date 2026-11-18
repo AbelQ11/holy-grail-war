@@ -176,3 +176,24 @@ jobs:
           files: release/**/*
           generate_release_notes: true
           fail_on_unmatched_files: true
+  deploy:
+    name: Deploy to OCI Ampere Server
+    needs: release
+    environment: production
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download & Restart Server via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.OCI_HOST }}
+          username: ${{ secrets.OCI_USER }}
+          key: ${{ secrets.OCI_SSH_KEY }}
+          script: |
+            set -e
+            TAG="${GITHUB_REF_NAME}"
+            cd /home/ubuntu/holy-grail-war
+            wget -q "https://github.com/AbelQ11/holy-grail-war/releases/download/${TAG}/holy-grail-war-server-arm64" -O holy-grail-war-server.arm64.new
+            chmod +x holy-grail-war-server.arm64.new
+            mv holy-grail-war-server.arm64.new holy-grail-war-server.arm64
+            sudo systemctl restart holy-grail-war@7777
