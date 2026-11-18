@@ -1,0 +1,178 @@
+name: CI
+
+"on":
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  GODOT_VERSION: "4.7.2"
+
+jobs:
+  validate:
+    name: Import, check-only and headless tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Godot 4
+        uses: chickensoft-games/setup-godot@v2
+        with:
+          version: ${{ env.GODOT_VERSION }}
+          use-dotnet: false
+          include-templates: false
+
+      - name: Import project resources
+        run: godot --headless --path . --import --quit
+
+      - name: Check-only every GDScript file
+        shell: bash
+        run: |
+          set -uo pipefail
+          failed=0
+          count=0
+          while IFS= read -r script; do
+            count=$((count + 1))
+            if output=$(godot --headless --path . --check-only --script "res://${script}" 2>&1); then
+              printf 'OK   %s\n' "$script"
+            else
+              printf 'FAIL %s\n' "$script"
+              printf '%s\n' "$output"
+              failed=1
+            fi
+          done < <(find . -name '*.gd' -not -path './.godot/*' -printf '%P\n' | sort)
+          printf 'Checked %d GDScript files.\n' "$count"
+          exit "$failed"
+
+      - name: Headless multiplayer and AI integration suites
+        shell: bash
+        run: |
+          set -euo pipefail
+          tests=(
+            shader_load_test
+            presentation_test
+            smoke_test
+            ai_smoke_test
+            lobby_flow_test
+            uniqueness_autonomy_test
+            server_reset_test
+          )
+          for test in "${tests[@]}"; do
+            echo "::group::${test}"
+            godot --headless --path . --script "res://tests/${test}.gd"
+            echo "::endgroup::"
+          done
+
+      - name: Arena replication (two processes)
+        shell: bash
+        run: |
+          set -euo pipefail
+          godot --headless --path . --port=7796 --script res://tests/net_server_test.gd > arena-server.log 2>&1 &
+          server_pid=$!
+          sleep 3
+          set +e
+          godot --headless --path . --connect=127.0.0.1:7796 --script res://tests/net_client_test.gd
+          client_status=$?
+          set -e
+          kill "$server_pid" 2>/dev/null || true
+          wait "$server_pid" 2>/dev/null || true
+          cat arena-server.log
+          exit "$client_status"
+
+      - name: Synchronized lobby replication (two processes)
+        shell: bash
+        run: |
+          set -euo pipefail
+          godot --headless --path . --port=7813 --script res://tests/net_lobby_server.gd > lobby-server.log 2>&1 &
+          server_pid=$!
+          sleep 3
+          set +e
+          godot --headless --path . --connect=127.0.0.1:7813 --script res://tests/net_lobby_client.gd
+          client_status=$?
+          set -e
+          kill "$server_pid" 2>/dev/null || true
+          wait "$server_pid" 2>/dev/null || true
+          cat lobby-server.log
+          exit "$client_status"
+
+  build:
+    name: Build release artifacts
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Godot 4 with export templates
+        uses: chickensoft-games/setup-godot@v2
+        with:
+          version: ${{ env.GODOT_VERSION }}
+          use-dotnet: false
+          include-templates: true
+
+      - name: Import project resources
+        run: godot --headless --path . --import --quit
+
+      - name: Export all five presets
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS='|' read -r preset output; do
+            [ -z "$preset" ] && continue
+            printf '\n=== Exporting %s -> %s ===\n' "$preset" "$output"
+            mkdir -p "$(dirname "$output")"
+            godot --headless --path . --export-release "$preset" "$output"
+          done <<'PRESETS'
+          Linux/X11|dist/linux/holy-grail-war.x86_64
+          Windows Desktop|dist/windows/holy-grail-war.exe
+          macOS|dist/macos/HolyGrailWar.zip
+          Linux Dedicated Server x86_64|dist/linux-server/holy-grail-war-server.x86_64
+          Linux Dedicated Server ARM64|dist/linux-server-arm64/holy-grail-war-server-arm64
+          PRESETS
+          ls -lhR dist
+
+      - name: Upload release artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-artifacts
+          path: dist/
+          if-no-files-found: error
+          retention-days: 7
+
+  release:
+    name: Publish GitHub Release
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download release artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: release-artifacts
+          path: release
+
+      - name: List release files
+        run: ls -lhR release
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release/**/*
+          generate_release_notes: true
+          fail_on_unmatched_files: true

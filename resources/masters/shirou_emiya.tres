@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MasterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/master_data.gd" id="1_5p2y7"]
+
+[resource]
+script = ExtResource("1_5p2y7")
+master_id = "shirou_emiya"
+display_name = "Shirou Emiya"
+description = "Novice Master. Low Mana bottleneck; reinforcement shield and projected blades."
+vision_radius = 460.0
+active_skills = PackedStringArray("Trace Reinforcement", "Projection")
+skill_1_name = "Trace Reinforcement"
+skill_2_name = "Projection"
+skill_1_style = 5
+skill_2_style = 0
+skill_1_cost = 30.0
+skill_2_cost = 25.0
+skill_1_cooldown = 10.0
+skill_2_cooldown = 6.0
+skill_1_desc = "Trace Reinforcement: Places a protective shield on the linked Servant. Mana 30, cooldown 10.0s."
+skill_2_desc = "Projection: Unleashes a radial magecraft burst. Mana 25, cooldown 6.0s."
+command_spell_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+np_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+passive_desc = "Master Mana 120, regeneration 6.0/s, vision 460. Mana upkeep from the contract is paid by this Master."
+signature_command_spell = "I Command You: Protect Everyone"
+signature_command_spell_desc = "Binds the Servant to a protective decree, shielding the duo and restoring HP. Also overrides Servant autonomy."
+signature_style = 3
+master_trump_card = "Rho Aias"
+trump_card_desc = "Projects the seven-petal shield, protecting the Master and Servant from damage."
+trump_style = 0
+trump_card_mana_cost = 35.0
+strength = 8
+endurance = 9
+agility = 7
+mana_rank = 12
+luck = 40
+max_mana = 120.0
+mana_regeneration = 6.0
+leyline_linked = true

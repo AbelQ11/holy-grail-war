@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_3r6rs"]
+
+[resource]
+script = ExtResource("1_3r6rs")
+servant_id = "sasaki_kojiro"
+display_name = "Sasaki Kojirou"
+servant_class = 5
+description = "Nameless swordsman. Short-range stealth assassin with a multi-slash finisher."
+vision_radius = 550.0
+strength = 28
+endurance = 20
+agility = 50
+mana_rank = 15
+luck = 40
+noble_phantasm_rank = 35
+max_mana = 90.0
+mana_regeneration = 7.0
+mana_upkeep_per_second = 1.2
+noble_phantasm_cost = 74.25
+attack_style = 1
+attack_damage = 21.0
+attack_mana_cost = 4.0
+attack_cooldown = 0.32
+attack_range = 100.0
+projectile_speed = 700.0
+melee_arc_degrees = 90.0
+critical_multiplier = 2.2
+critical_chance = 0.38
+skill_1_cost = 15.0
+skill_2_cost = 30.0
+skill_1_cooldown = 9.0
+skill_2_cooldown = 7.0
+skill_1_style = 2
+skill_2_style = 3
+skill_1_desc = "Presence Concealment: Enters Presence Concealment, fading from sight until attacking. Mana 15, cooldown 9.0s."
+skill_2_desc = "Tsubame Gaeshi: Dashes forward, damaging enemies along the path. Mana 30, cooldown 7.0s."
+skill_dash_distance = 200.0
+skill_aoe_radius = 180.0
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+stealth_duration = 3.0
+noble_phantasm_name = "Tsubame Gaeshi"
+noble_phantasm_style = 3
+noble_phantasm_desc = "Tsubame Gaeshi: Detonates a large-area Noble Phantasm burst. Power 100, range 220, Mana 74, duration 4.0s."
+np_desc = "Tsubame Gaeshi: Detonates a large-area Noble Phantasm burst. Power 100, range 220, Mana 74, duration 4.0s."
+passive_desc = "Passive class skills: Presence Concealment, Independent Action. STR 28 / END 20 / AGI 50 / MANA 15 / LCK 40 / NP 35. Upkeep 1.2 Mana/s."
+noble_phantasm_color = Color(0.75, 0.85, 0.95, 1)
+noble_phantasm_damage = 100.0
+noble_phantasm_range = 220.0
+class_skills = PackedStringArray("Presence Concealment", "Independent Action")
+active_skills = PackedStringArray("Presence Concealment", "Tsubame Gaeshi")

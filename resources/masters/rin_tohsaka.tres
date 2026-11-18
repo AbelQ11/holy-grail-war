@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MasterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/master_data.gd" id="1_ilcmq"]
+
+[resource]
+script = ExtResource("1_ilcmq")
+master_id = "rin_tohsaka"
+display_name = "Rin Tohsaka"
+description = "Tohsaka heir. Jewel magecraft burst and a direct Mana transfer to her Servant."
+vision_radius = 560.0
+active_skills = PackedStringArray("Jewel Burst", "Mana Transfer")
+skill_1_name = "Jewel Burst"
+skill_2_name = "Mana Transfer"
+skill_1_cost = 35.0
+skill_2_cost = 40.0
+skill_1_cooldown = 7.0
+skill_2_cooldown = 12.0
+skill_1_desc = "Jewel Burst: Unleashes a radial magecraft burst. Mana 35, cooldown 7.0s."
+skill_2_desc = "Mana Transfer: Restores the linked Servant's HP and Mana. Mana 40, cooldown 12.0s."
+command_spell_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+np_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+passive_desc = "Master Mana 180, regeneration 9.0/s, vision 560. Mana upkeep from the contract is paid by this Master."
+signature_command_spell = "Tohsaka Decree: Overclock"
+signature_command_spell_desc = "Overclocks the Servant's Mana core, restoring Mana and temporarily empowering its next strikes. Also overrides Servant autonomy."
+signature_style = 1
+master_trump_card = "Zelretch Jeweled Sword"
+trump_card_desc = "Unleashes a concentrated jeweled-sword beam that pierces enemy lines."
+trump_style = 1
+trump_card_cooldown = 55.0
+trump_card_mana_cost = 40.0
+strength = 8
+endurance = 8
+agility = 10
+mana_rank = 25
+luck = 30
+max_mana = 180.0
+mana_regeneration = 9.0
+leyline_affinity = 1.25
+leyline_linked = true

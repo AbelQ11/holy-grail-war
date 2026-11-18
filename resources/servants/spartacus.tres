@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_gta7l"]
+
+[resource]
+script = ExtResource("1_gta7l")
+servant_id = "spartacus"
+display_name = "Spartacus"
+servant_class = 6
+description = "Rebel gladiator. Grows dangerous as he is wounded and detonates in a wide roar."
+vision_radius = 500.0
+strength = 43
+endurance = 45
+agility = 28
+mana_rank = 15
+noble_phantasm_rank = 45
+max_mana = 130.0
+mana_regeneration = 5.0
+mana_upkeep_per_second = 3.8
+noble_phantasm_cost = 79.75
+attack_style = 1
+attack_damage = 29.0
+attack_mana_cost = 6.0
+attack_cooldown = 0.5
+attack_range = 120.0
+projectile_speed = 700.0
+melee_arc_degrees = 140.0
+critical_chance = 0.05
+skill_1_cost = 20.0
+skill_2_cost = 30.0
+skill_1_cooldown = 4.0
+skill_2_cooldown = 7.0
+skill_1_desc = "Mad Enhancement: Temporarily boosts damage and movement speed. Mana 20, cooldown 4.0s."
+skill_2_desc = "Crying Warmonger: Detonates an area attack around the Servant. Mana 30, cooldown 7.0s."
+skill_aoe_radius = 210.0
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+noble_phantasm_name = "Crying Warmonger"
+noble_phantasm_style = 3
+noble_phantasm_desc = "Crying Warmonger: Detonates a large-area Noble Phantasm burst. Power 125, range 280, Mana 79, duration 4.0s."
+np_desc = "Crying Warmonger: Detonates a large-area Noble Phantasm burst. Power 125, range 280, Mana 79, duration 4.0s."
+passive_desc = "Passive class skills: Mad Enhancement. STR 43 / END 45 / AGI 28 / MANA 15 / LCK 10 / NP 45. Upkeep 3.8 Mana/s."
+noble_phantasm_color = Color(0.9, 0.35, 0.25, 1)
+noble_phantasm_damage = 125.0
+noble_phantasm_range = 280.0
+class_skills = PackedStringArray("Mad Enhancement")
+active_skills = PackedStringArray("Mad Enhancement", "Crying Warmonger")

@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_g3se7"]
+
+[resource]
+script = ExtResource("1_g3se7")
+servant_id = "amakusa_shirou"
+display_name = "Amakusa Shirou"
+servant_class = 7
+description = "Ruler of the Great Holy Grail War. Reveals enemies and purges formations."
+vision_radius = 600.0
+strength = 30
+endurance = 35
+agility = 38
+mana_rank = 45
+luck = 30
+noble_phantasm_rank = 52
+max_mana = 180.0
+mana_regeneration = 10.0
+mana_upkeep_per_second = 3.0
+noble_phantasm_cost = 83.6
+attack_mana_cost = 7.0
+attack_cooldown = 0.45
+attack_range = 700.0
+projectile_speed = 650.0
+melee_arc_degrees = 90.0
+critical_chance = 0.08
+skill_1_cost = 20.0
+skill_2_cost = 30.0
+skill_1_cooldown = 4.0
+skill_2_cooldown = 7.0
+skill_1_style = 5
+skill_2_style = 6
+skill_1_desc = "Revelation: Scouting pulse that reveals enemy true names in range. Mana 20, cooldown 4.0s."
+skill_2_desc = "True Name Discernment: Restores HP to the Servant and linked Master. Mana 30, cooldown 7.0s."
+skill_aoe_radius = 180.0
+skill_heal_amount = 60.0
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+spell_damage_multiplier = 1.1
+noble_phantasm_name = "Twin Arm Crise"
+noble_phantasm_style = 3
+noble_phantasm_desc = "Twin Arm Crise: Detonates a large-area Noble Phantasm burst. Power 95, range 300, Mana 83, duration 4.0s."
+np_desc = "Twin Arm Crise: Detonates a large-area Noble Phantasm burst. Power 95, range 300, Mana 83, duration 4.0s."
+passive_desc = "Passive class skills: Magic Resistance, True Name Discernment. STR 30 / END 35 / AGI 38 / MANA 45 / LCK 30 / NP 52. Upkeep 3.0 Mana/s."
+noble_phantasm_color = Color(0.85, 0.85, 1, 1)
+noble_phantasm_damage = 95.0
+noble_phantasm_range = 300.0
+class_skills = PackedStringArray("Magic Resistance", "True Name Discernment")
+active_skills = PackedStringArray("Revelation", "True Name Discernment", "Twin Arm Crise")

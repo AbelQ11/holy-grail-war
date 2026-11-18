@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="MasterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/master_data.gd" id="1_gjawl"]
+
+[resource]
+script = ExtResource("1_gjawl")
+master_id = "caules_forvedge"
+display_name = "Caules Forvedge Yggdmillennia"
+description = "Forvedge heir. Familiar scouting and restoration support."
+vision_radius = 600.0
+active_skills = PackedStringArray("Familiar Network", "Familiar Restoration")
+skill_1_name = "Familiar Network"
+skill_2_name = "Familiar Restoration"
+skill_1_style = 3
+skill_1_cooldown = 9.0
+skill_2_cooldown = 11.0
+skill_1_desc = "Familiar Network: Scouting magecraft that reveals enemy true names. Mana 25, cooldown 9.0s."
+skill_2_desc = "Familiar Restoration: Restores the linked Servant's HP and Mana. Mana 35, cooldown 11.0s."
+command_spell_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+np_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+passive_desc = "Master Mana 180, regeneration 9.0/s, vision 600. Mana upkeep from the contract is paid by this Master."
+signature_command_spell = "Caules Decree: Familiar Network"
+signature_command_spell_desc = "Familiar scouts reveal enemies and restore the Servant. Overrides Servant autonomy."
+signature_style = 2
+master_trump_card = "Familiar Network Restoration"
+trump_card_desc = "The familiar network restores and shields the Servant."
+trump_card_cooldown = 55.0
+trump_card_mana_cost = 35.0
+strength = 6
+endurance = 8
+agility = 9
+mana_rank = 22
+luck = 28
+max_mana = 180.0
+mana_regeneration = 9.0
+leyline_affinity = 1.15
+leyline_linked = true

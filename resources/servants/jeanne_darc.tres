@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_mp8ul"]
+
+[resource]
+script = ExtResource("1_mp8ul")
+servant_id = "jeanne_darc"
+display_name = "Jeanne d'Arc"
+servant_class = 7
+description = "Holy Maiden. Neutral arbiter with exceptional defense and a team saving NP."
+vision_radius = 600.0
+strength = 25
+endurance = 45
+agility = 30
+mana_rank = 55
+luck = 40
+noble_phantasm_rank = 60
+max_mana = 220.0
+mana_regeneration = 12.0
+mana_upkeep_per_second = 3.5
+noble_phantasm_cost = 88.0
+attack_damage = 14.0
+attack_mana_cost = 7.0
+attack_cooldown = 0.45
+attack_range = 700.0
+projectile_speed = 650.0
+melee_arc_degrees = 90.0
+critical_chance = 0.08
+skill_1_cost = 20.0
+skill_2_cost = 30.0
+skill_1_cooldown = 4.0
+skill_2_cooldown = 7.0
+skill_1_style = 5
+skill_2_style = 6
+skill_1_desc = "Revelation: Scouting pulse that reveals enemy true names in range. Mana 20, cooldown 4.0s."
+skill_2_desc = "True Name Discernment: Restores HP to the Servant and linked Master. Mana 30, cooldown 7.0s."
+skill_aoe_radius = 180.0
+skill_heal_amount = 60.0
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+spell_damage_multiplier = 1.1
+noble_phantasm_name = "Luminosite Eternelle"
+noble_phantasm_style = 5
+noble_phantasm_desc = "Luminosite Eternelle: Heals and shields allied units within range. Power 80, range 320, Mana 88, duration 5.0s."
+np_desc = "Luminosite Eternelle: Heals and shields allied units within range. Power 80, range 320, Mana 88, duration 5.0s."
+passive_desc = "Passive class skills: Magic Resistance, True Name Discernment. STR 25 / END 45 / AGI 30 / MANA 55 / LCK 40 / NP 60. Upkeep 3.5 Mana/s."
+noble_phantasm_color = Color(1, 0.92, 0.55, 1)
+noble_phantasm_damage = 80.0
+noble_phantasm_range = 320.0
+noble_phantasm_duration = 5.0
+class_skills = PackedStringArray("Magic Resistance", "True Name Discernment")
+active_skills = PackedStringArray("Revelation", "True Name Discernment", "Luminosite Eternelle")

@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="MasterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/master_data.gd" id="1_2o2n1"]
+
+[resource]
+script = ExtResource("1_2o2n1")
+master_id = "kirei_kotomine"
+display_name = "Kirei Kotomine"
+description = "Executor. Restores his Servant with spiritual surgery and purges with baptism rites."
+active_skills = PackedStringArray("Spiritual Surgery", "Baptism Rite")
+skill_1_name = "Spiritual Surgery"
+skill_2_name = "Baptism Rite"
+skill_1_style = 1
+skill_2_style = 0
+skill_1_cost = 35.0
+skill_1_cooldown = 10.0
+skill_2_cooldown = 8.0
+skill_1_desc = "Spiritual Surgery: Restores the linked Servant's HP and Mana. Mana 35, cooldown 10.0s."
+skill_2_desc = "Baptism Rite: Unleashes a radial magecraft burst. Mana 35, cooldown 8.0s."
+command_spell_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+np_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+passive_desc = "Master Mana 160, regeneration 8.0/s, vision 520. Mana upkeep from the contract is paid by this Master."
+signature_command_spell = "Executor's Decree: Submit"
+signature_command_spell_desc = "A binding rite that reveals nearby enemies and shields the Servant. Overrides Servant autonomy."
+signature_style = 2
+master_trump_card = "Baptism Rite"
+trump_card_desc = "A purifying rite that burns nearby enemies and restores the Servant."
+trump_style = 8
+trump_card_cooldown = 50.0
+trump_card_mana_cost = 35.0
+strength = 12
+endurance = 14
+agility = 9
+mana_rank = 18
+luck = 25
+max_mana = 160.0
+leyline_affinity = 1.1
+leyline_linked = true

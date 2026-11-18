@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_kfpxb"]
+
+[resource]
+script = ExtResource("1_kfpxb")
+servant_id = "william_shakespeare"
+display_name = "William Shakespeare"
+servant_class = 4
+description = "Playwright Caster. Cheap upkeep, traps, and a supportive First Folio."
+vision_radius = 600.0
+strength = 8
+endurance = 12
+agility = 20
+mana_rank = 50
+luck = 30
+noble_phantasm_rank = 30
+max_mana = 170.0
+mana_regeneration = 11.0
+mana_upkeep_per_second = 1.0
+noble_phantasm_cost = 71.5
+attack_damage = 10.0
+attack_mana_cost = 7.0
+attack_cooldown = 0.5
+attack_range = 800.0
+projectile_speed = 620.0
+melee_arc_degrees = 90.0
+critical_chance = 0.05
+skill_1_cost = 30.0
+skill_2_cost = 30.0
+skill_1_cooldown = 2.5
+skill_2_cooldown = 7.0
+skill_1_style = 1
+skill_2_style = 5
+skill_1_desc = "Enchant: Places a persistent magic-circle trap that pulses damage. Mana 30, cooldown 2.5s."
+skill_2_desc = "Clairvoyance: Scouting pulse that reveals enemy true names in range. Mana 30, cooldown 7.0s."
+skill_aoe_radius = 180.0
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+spell_damage_multiplier = 1.3
+territory_mana_bonus = 15.0
+territory_spell_bonus = 0.5
+trap_cast_range = 230.0
+trap_radius = 65.0
+trap_damage = 20.0
+trap_duration = 12.0
+trap_pulse_interval = 0.9
+noble_phantasm_name = "First Folio"
+noble_phantasm_style = 5
+noble_phantasm_desc = "First Folio: Heals and shields allied units within range. Power 70, range 260, Mana 71, duration 4.0s."
+np_desc = "First Folio: Heals and shields allied units within range. Power 70, range 260, Mana 71, duration 4.0s."
+passive_desc = "Passive class skills: Territory Creation, Item Construction. STR 8 / END 12 / AGI 20 / MANA 50 / LCK 30 / NP 30. Upkeep 1.0 Mana/s."
+noble_phantasm_color = Color(1, 0.9, 0.6, 1)
+noble_phantasm_damage = 70.0
+noble_phantasm_range = 260.0
+class_skills = PackedStringArray("Territory Creation", "Item Construction")
+active_skills = PackedStringArray("Enchant", "Clairvoyance", "First Folio")

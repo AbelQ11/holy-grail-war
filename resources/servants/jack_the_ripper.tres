@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_tstry"]
+
+[resource]
+script = ExtResource("1_tstry")
+servant_id = "jack_the_ripper"
+display_name = "Jack the Ripper"
+servant_class = 5
+description = "Black Assassin. Fast stealth killer with a high-crit dash execution."
+vision_radius = 550.0
+strength = 26
+endurance = 22
+agility = 58
+mana_rank = 18
+luck = 45
+noble_phantasm_rank = 45
+max_mana = 95.0
+mana_regeneration = 7.0
+mana_upkeep_per_second = 1.3
+noble_phantasm_cost = 79.75
+attack_style = 1
+attack_damage = 23.0
+attack_mana_cost = 4.0
+attack_cooldown = 0.32
+attack_range = 100.0
+projectile_speed = 700.0
+melee_arc_degrees = 90.0
+critical_multiplier = 2.2
+critical_chance = 0.38
+skill_1_cost = 15.0
+skill_2_cost = 30.0
+skill_1_cooldown = 9.0
+skill_2_cooldown = 7.0
+skill_1_style = 2
+skill_2_style = 3
+skill_1_desc = "Presence Concealment: Enters Presence Concealment, fading from sight until attacking. Mana 15, cooldown 9.0s."
+skill_2_desc = "Information Erasure: Dashes forward, damaging enemies along the path. Mana 30, cooldown 7.0s."
+skill_dash_distance = 200.0
+skill_aoe_radius = 180.0
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+stealth_duration = 5.0
+noble_phantasm_name = "Maria the Ripper"
+noble_phantasm_style = 2
+noble_phantasm_desc = "Maria the Ripper: Performs a high-speed dash strike with critical damage. Power 105, range 330, Mana 79, duration 4.0s."
+np_desc = "Maria the Ripper: Performs a high-speed dash strike with critical damage. Power 105, range 330, Mana 79, duration 4.0s."
+passive_desc = "Passive class skills: Presence Concealment, Independent Action. STR 26 / END 22 / AGI 58 / MANA 18 / LCK 45 / NP 45. Upkeep 1.3 Mana/s."
+noble_phantasm_color = Color(0.55, 0.15, 0.2, 1)
+noble_phantasm_damage = 105.0
+noble_phantasm_range = 330.0
+class_skills = PackedStringArray("Presence Concealment", "Independent Action")
+active_skills = PackedStringArray("Presence Concealment", "Information Erasure", "Maria the Ripper")

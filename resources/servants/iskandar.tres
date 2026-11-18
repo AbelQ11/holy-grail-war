@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_hmxb3"]
+
+[resource]
+script = ExtResource("1_hmxb3")
+servant_id = "iskandar"
+display_name = "Iskandar"
+servant_class = 3
+description = "King of Conquerors. A chariot charge leads into the phalanx Reality Marble of his army."
+vision_radius = 560.0
+strength = 44
+endurance = 42
+agility = 38
+mana_rank = 30
+luck = 28
+noble_phantasm_rank = 62
+max_mana = 160.0
+mana_regeneration = 8.0
+mana_upkeep_per_second = 3.8
+noble_phantasm_cost = 89.1
+attack_style = 1
+attack_damage = 29.0
+attack_mana_cost = 6.0
+attack_cooldown = 0.38
+attack_range = 120.0
+projectile_speed = 700.0
+melee_arc_degrees = 100.0
+critical_chance = 0.08
+skill_1_cost = 20.0
+skill_2_cost = 30.0
+skill_1_cooldown = 4.0
+skill_2_cooldown = 7.0
+skill_1_style = 3
+skill_2_style = 4
+skill_1_desc = "Charisma: Dashes forward, damaging enemies along the path. Mana 20, cooldown 4.0s."
+skill_2_desc = "Military Tactics: Temporarily boosts damage and movement speed. Mana 30, cooldown 7.0s."
+skill_dash_distance = 240.0
+skill_aoe_radius = 180.0
+skill_buff_speed_multiplier = 1.4
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+noble_phantasm_name = "Ionioi Hetairoi"
+noble_phantasm_style = 1
+noble_phantasm_desc = "Ionioi Hetairoi: Deploys a Reality Marble arena override that accelerates projectile attacks. Power 0, range 0, Mana 89, duration 12.0s."
+np_desc = "Ionioi Hetairoi: Deploys a Reality Marble arena override that accelerates projectile attacks. Power 0, range 0, Mana 89, duration 12.0s."
+passive_desc = "Passive class skills: Riding, Magic Resistance. STR 44 / END 42 / AGI 38 / MANA 30 / LCK 28 / NP 62. Upkeep 3.8 Mana/s."
+noble_phantasm_color = Color(0.95, 0.62, 0.25, 1)
+noble_phantasm_duration = 12.0
+reality_marble_drain_per_second = 10.0
+reality_marble_haste = 0.7
+reality_marble_auto_barrage = true
+reality_marble_barrage_interval = 0.75
+class_skills = PackedStringArray("Riding", "Magic Resistance")
+active_skills = PackedStringArray("Charisma", "Military Tactics", "Ionioi Hetairoi")

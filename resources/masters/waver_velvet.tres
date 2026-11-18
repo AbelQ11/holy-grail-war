@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="MasterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/master_data.gd" id="1_0gowp"]
+
+[resource]
+script = ExtResource("1_0gowp")
+master_id = "waver_velvet"
+display_name = "Waver Velvet"
+description = "Future Lord El-Melloi II. Global scouting and tactical support for his Servant."
+vision_radius = 660.0
+active_skills = PackedStringArray("Grand Strategy", "Tactical Support")
+skill_1_name = "Grand Strategy"
+skill_2_name = "Tactical Support"
+skill_1_style = 3
+skill_1_cooldown = 9.0
+skill_2_cooldown = 12.0
+skill_1_desc = "Grand Strategy: Scouting magecraft that reveals enemy true names. Mana 25, cooldown 9.0s."
+skill_2_desc = "Tactical Support: Restores the linked Servant's HP and Mana. Mana 35, cooldown 12.0s."
+command_spell_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+np_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+passive_desc = "Master Mana 140, regeneration 7.0/s, vision 660. Mana upkeep from the contract is paid by this Master."
+signature_command_spell = "Velvet Decree: Grand Strategy"
+signature_command_spell_desc = "A strategic command that reveals enemy positions and restores the Servant. Overrides Servant autonomy."
+signature_style = 2
+master_trump_card = "Grand Strategist's Decree"
+trump_card_desc = "Reveals the entire enemy order of battle and restores tactical Mana."
+trump_style = 4
+trump_card_cooldown = 50.0
+trump_card_mana_cost = 25.0
+endurance = 7
+agility = 8
+mana_rank = 18
+luck = 30
+max_mana = 140.0
+mana_regeneration = 7.0
+leyline_linked = true

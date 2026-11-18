@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_nf0xn"]
+
+[resource]
+script = ExtResource("1_nf0xn")
+servant_id = "diarmuid_ua_duibhne"
+display_name = "Diarmuid Ua Duibhne"
+servant_class = 2
+description = "Lancer of the Fourth War. Strips enchantments and inflicts anti-heal with his twin spears."
+vision_radius = 540.0
+strength = 32
+endurance = 30
+agility = 46
+mana_rank = 25
+luck = 30
+noble_phantasm_rank = 50
+max_mana = 110.0
+mana_regeneration = 8.0
+mana_upkeep_per_second = 1.8
+noble_phantasm_cost = 82.5
+attack_style = 1
+attack_damage = 23.0
+attack_mana_cost = 6.0
+attack_cooldown = 0.4
+attack_range = 150.0
+projectile_speed = 700.0
+melee_arc_degrees = 80.0
+critical_chance = 0.15
+skill_1_cost = 20.0
+skill_2_cost = 30.0
+skill_1_cooldown = 4.0
+skill_2_cooldown = 7.0
+skill_1_style = 3
+skill_2_style = 4
+skill_1_desc = "Gae Dearg: Dashes forward, damaging enemies along the path. Mana 20, cooldown 4.0s."
+skill_2_desc = "Gae Buidhe: Temporarily boosts damage and movement speed. Mana 30, cooldown 7.0s."
+skill_dash_distance = 220.0
+skill_aoe_radius = 180.0
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+noble_phantasm_name = "Gae Buidhe & Gae Dearg"
+noble_phantasm_style = 2
+noble_phantasm_desc = "Gae Buidhe & Gae Dearg: Performs a high-speed dash strike with critical damage. Power 98, range 380, Mana 82, duration 4.0s."
+np_desc = "Gae Buidhe & Gae Dearg: Performs a high-speed dash strike with critical damage. Power 98, range 380, Mana 82, duration 4.0s."
+passive_desc = "Passive class skills: Magic Resistance, Battle Continuation. STR 32 / END 30 / AGI 46 / MANA 25 / LCK 30 / NP 50. Upkeep 1.8 Mana/s."
+noble_phantasm_color = Color(0.95, 0.75, 0.25, 1)
+noble_phantasm_damage = 98.0
+noble_phantasm_range = 380.0
+strips_buffs_on_np = true
+anti_heal_duration = 6.0
+class_skills = PackedStringArray("Magic Resistance", "Battle Continuation")
+active_skills = PackedStringArray("Gae Dearg", "Gae Buidhe", "Two Spears of the Twin Decrees")

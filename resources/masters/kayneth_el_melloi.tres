@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MasterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/master_data.gd" id="1_g6etm"]
+
+[resource]
+script = ExtResource("1_g6etm")
+master_id = "kayneth_el_melloi"
+display_name = "Kayneth El-Melloi Archibald"
+description = "Lord El-Melloi. Liquid mercury auto-parry and a storm of mystic-code construct blades."
+vision_radius = 580.0
+active_skills = PackedStringArray("Volumen Hydrargyrum", "Mercury Lash")
+skill_1_name = "Volumen Hydrargyrum"
+skill_2_name = "Mercury Lash"
+skill_1_style = 5
+skill_2_style = 0
+skill_1_cost = 40.0
+skill_1_cooldown = 8.0
+skill_2_cooldown = 7.0
+skill_1_desc = "Volumen Hydrargyrum: Places a protective shield on the linked Servant. Mana 40, cooldown 8.0s."
+skill_2_desc = "Mercury Lash: Unleashes a radial magecraft burst. Mana 35, cooldown 7.0s."
+command_spell_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+np_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+passive_desc = "Master Mana 240, regeneration 10.0/s, vision 580. Mana upkeep from the contract is paid by this Master."
+signature_command_spell = "Archibald Decree: Volumen"
+signature_command_spell_desc = "Orders the Servant under the protection of Volumen Hydrargyrum, shielding it and forcing compliance."
+signature_style = 3
+master_trump_card = "Volumen Hydrargyrum: Suchen & Schneiden"
+trump_card_desc = "Mercury blades storm the battlefield, shielding the Servant and cutting enemies."
+trump_style = 3
+trump_card_cooldown = 65.0
+trump_card_mana_cost = 50.0
+strength = 10
+endurance = 11
+agility = 9
+mana_rank = 32
+luck = 20
+max_mana = 240.0
+mana_regeneration = 10.0
+leyline_affinity = 1.35
+leyline_linked = true

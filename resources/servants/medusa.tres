@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_1x2ak"]
+
+[resource]
+script = ExtResource("1_1x2ak")
+servant_id = "medusa"
+display_name = "Medusa"
+servant_class = 3
+description = "Gorgon Rider. Mobile charger with a Pegasus-driven dash."
+vision_radius = 560.0
+strength = 30
+endurance = 28
+agility = 42
+mana_rank = 30
+luck = 30
+noble_phantasm_rank = 45
+max_mana = 120.0
+mana_regeneration = 8.0
+mana_upkeep_per_second = 2.0
+noble_phantasm_cost = 79.75
+attack_style = 1
+attack_damage = 21.0
+attack_mana_cost = 6.0
+attack_cooldown = 0.38
+attack_range = 120.0
+projectile_speed = 700.0
+melee_arc_degrees = 100.0
+critical_chance = 0.08
+skill_1_cost = 20.0
+skill_2_cost = 30.0
+skill_1_cooldown = 4.0
+skill_2_cooldown = 7.0
+skill_1_style = 3
+skill_2_style = 4
+skill_1_desc = "Blood Fort Andromeda: Dashes forward, damaging enemies along the path. Mana 20, cooldown 4.0s."
+skill_2_desc = "Mystic Eyes: Temporarily boosts damage and movement speed. Mana 30, cooldown 7.0s."
+skill_dash_distance = 240.0
+skill_aoe_radius = 180.0
+skill_buff_speed_multiplier = 1.4
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+noble_phantasm_name = "Bellerophon"
+noble_phantasm_style = 2
+noble_phantasm_desc = "Bellerophon: Performs a high-speed dash strike with critical damage. Power 95, range 380, Mana 79, duration 4.0s."
+np_desc = "Bellerophon: Performs a high-speed dash strike with critical damage. Power 95, range 380, Mana 79, duration 4.0s."
+passive_desc = "Passive class skills: Riding, Magic Resistance. STR 30 / END 28 / AGI 42 / MANA 30 / LCK 30 / NP 45. Upkeep 2.0 Mana/s."
+noble_phantasm_color = Color(0.7, 0.45, 1, 1)
+noble_phantasm_damage = 95.0
+noble_phantasm_range = 380.0
+class_skills = PackedStringArray("Riding", "Magic Resistance")
+active_skills = PackedStringArray("Blood Fort Andromeda", "Mystic Eyes", "Bellerophon")

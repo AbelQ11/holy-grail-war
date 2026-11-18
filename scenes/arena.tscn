@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/arena.gd" id="1_arena"]
+[ext_resource type="Script" path="res://scripts/world/leyline_node.gd" id="2_leyline"]
+
+[node name="Arena" type="Node2D"]
+script = ExtResource("1_arena")
+
+[node name="Leylines" type="Node2D" parent="."]
+
+[node name="LeylineWest" type="Area2D" parent="Leylines"]
+position = Vector2(-440, 150)
+script = ExtResource("2_leyline")
+leyline_name = "Western Leyline"
+capture_radius = 82.0
+accent_color = Color(0.55, 0.42, 0.95, 1)
+
+[node name="LeylineEast" type="Area2D" parent="Leylines"]
+position = Vector2(440, 150)
+script = ExtResource("2_leyline")
+leyline_name = "Eastern Leyline"
+capture_radius = 82.0
+accent_color = Color(0.38, 0.72, 0.88, 1)
+
+[node name="LeylineCenter" type="Area2D" parent="Leylines"]
+position = Vector2(0, 0)
+script = ExtResource("2_leyline")
+leyline_name = "Central Leyline"
+capture_radius = 82.0
+accent_color = Color(0.82, 0.52, 0.95, 1)

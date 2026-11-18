@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_nu56t"]
+
+[resource]
+script = ExtResource("1_nu56t")
+servant_id = "gilgamesh"
+display_name = "Gilgamesh"
+servant_class = 1
+description = "King of Heroes. A Mana-hungry powerhouse with overwhelming beam Noble Phantasm."
+vision_radius = 650.0
+strength = 35
+endurance = 30
+agility = 45
+mana_rank = 40
+luck = 25
+noble_phantasm_rank = 70
+max_mana = 180.0
+mana_regeneration = 9.0
+mana_upkeep_per_second = 4.5
+noble_phantasm_cost = 93.5
+attack_damage = 20.0
+attack_mana_cost = 7.0
+attack_cooldown = 0.3
+attack_range = 900.0
+projectile_speed = 880.0
+melee_arc_degrees = 90.0
+critical_chance = 0.14
+skill_1_cost = 24.0
+skill_2_cost = 30.0
+skill_1_cooldown = 3.5
+skill_2_cooldown = 7.0
+skill_1_style = 0
+skill_2_style = 5
+skill_1_desc = "Gate of Babylon: Fires a rapid multi-projectile barrage. Mana 24, cooldown 3.5s."
+skill_2_desc = "Charisma: Scouting pulse that reveals enemy true names in range. Mana 30, cooldown 7.0s."
+skill_aoe_radius = 180.0
+barrage_projectiles = 6
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+noble_phantasm_name = "Enuma Elish"
+noble_phantasm_desc = "Enuma Elish: Fires a high-damage directional beam. Power 145, range 1100, Mana 93, duration 4.0s."
+np_desc = "Enuma Elish: Fires a high-damage directional beam. Power 145, range 1100, Mana 93, duration 4.0s."
+passive_desc = "Passive class skills: Independent Action, Magic Resistance. STR 35 / END 30 / AGI 45 / MANA 40 / LCK 25 / NP 70. Upkeep 4.5 Mana/s."
+noble_phantasm_color = Color(1, 0.75, 0.25, 1)
+noble_phantasm_damage = 145.0
+noble_phantasm_range = 1100.0
+class_skills = PackedStringArray("Independent Action", "Magic Resistance")
+active_skills = PackedStringArray("Gate of Babylon", "Charisma", "Enuma Elish")

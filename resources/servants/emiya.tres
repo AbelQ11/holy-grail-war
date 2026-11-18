@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_0xt6m"]
+
+[resource]
+script = ExtResource("1_0xt6m")
+servant_id = "emiya"
+display_name = "EMIYA"
+servant_class = 1
+description = "Nameless Guardian. Rapid blade barrage and a Reality Marble that accelerates projection fire."
+vision_radius = 650.0
+strength = 25
+endurance = 28
+agility = 52
+mana_rank = 30
+luck = 30
+noble_phantasm_rank = 48
+max_mana = 110.0
+mana_regeneration = 8.0
+mana_upkeep_per_second = 1.8
+noble_phantasm_cost = 81.4
+attack_damage = 17.0
+attack_mana_cost = 7.0
+attack_cooldown = 0.3
+attack_range = 900.0
+projectile_speed = 880.0
+melee_arc_degrees = 90.0
+critical_chance = 0.14
+skill_1_cost = 24.0
+skill_2_cost = 30.0
+skill_1_cooldown = 3.5
+skill_2_cooldown = 7.0
+skill_1_style = 0
+skill_2_style = 5
+skill_1_desc = "Blade Barrage: Fires a rapid multi-projectile barrage. Mana 24, cooldown 3.5s."
+skill_2_desc = "Clairvoyance: Scouting pulse that reveals enemy true names in range. Mana 30, cooldown 7.0s."
+skill_aoe_radius = 180.0
+barrage_projectiles = 6
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+noble_phantasm_name = "Unlimited Blade Works"
+noble_phantasm_style = 1
+noble_phantasm_desc = "Unlimited Blade Works: Deploys a Reality Marble arena override that accelerates projectile attacks. Power 0, range 0, Mana 81, duration 12.0s."
+np_desc = "Unlimited Blade Works: Deploys a Reality Marble arena override that accelerates projectile attacks. Power 0, range 0, Mana 81, duration 12.0s."
+passive_desc = "Passive class skills: Independent Action, Magic Resistance. STR 25 / END 28 / AGI 52 / MANA 30 / LCK 30 / NP 48. Upkeep 1.8 Mana/s."
+noble_phantasm_color = Color(0.4, 0.85, 1, 1)
+noble_phantasm_duration = 12.0
+reality_marble_drain_per_second = 8.0
+reality_marble_haste = 0.4
+class_skills = PackedStringArray("Independent Action", "Magic Resistance")
+active_skills = PackedStringArray("Blade Barrage", "Clairvoyance", "Unlimited Blade Works")

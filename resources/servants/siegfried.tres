@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_y2082"]
+
+[resource]
+script = ExtResource("1_y2082")
+servant_id = "siegfried"
+display_name = "Siegfried"
+description = "Dragon-blooded knight. High END and a broad dragon-slaying beam."
+strength = 42
+endurance = 48
+agility = 32
+mana_rank = 25
+luck = 25
+noble_phantasm_rank = 55
+max_mana = 140.0
+mana_upkeep_per_second = 3.2
+noble_phantasm_cost = 85.25
+attack_style = 1
+attack_damage = 29.0
+attack_mana_cost = 6.0
+attack_cooldown = 0.45
+attack_range = 112.0
+projectile_speed = 700.0
+melee_arc_degrees = 120.0
+critical_chance = 0.1
+skill_1_cost = 20.0
+skill_2_cost = 30.0
+skill_1_cooldown = 4.0
+skill_2_cooldown = 7.0
+skill_1_desc = "Golden Rule: Temporarily boosts damage and movement speed. Mana 20, cooldown 4.0s."
+skill_2_desc = "Dragon Slayer: Detonates an area attack around the Servant. Mana 30, cooldown 7.0s."
+skill_aoe_radius = 180.0
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+noble_phantasm_name = "Balmung"
+noble_phantasm_desc = "Balmung: Fires a high-damage directional beam. Power 105, range 800, Mana 85, duration 4.0s."
+np_desc = "Balmung: Fires a high-damage directional beam. Power 105, range 800, Mana 85, duration 4.0s."
+passive_desc = "Passive class skills: Magic Resistance, Riding. STR 42 / END 48 / AGI 32 / MANA 25 / LCK 25 / NP 55. Upkeep 3.2 Mana/s."
+noble_phantasm_color = Color(0.35, 0.65, 1, 1)
+noble_phantasm_damage = 105.0
+noble_phantasm_range = 800.0
+class_skills = PackedStringArray("Magic Resistance", "Riding")
+active_skills = PackedStringArray("Golden Rule", "Dragon Slayer", "Balmung")

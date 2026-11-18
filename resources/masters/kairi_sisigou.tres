@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="MasterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/master_data.gd" id="1_s0f3a"]
+
+[resource]
+script = ExtResource("1_s0f3a")
+master_id = "kairi_sisigou"
+display_name = "Kairi Sisigou"
+description = "Necromancer freelancer. Steady offense and Servant restoration."
+vision_radius = 560.0
+active_skills = PackedStringArray("Magecraft Bullet", "Necromancy")
+skill_1_name = "Magecraft Bullet"
+skill_2_name = "Necromancy"
+skill_1_cost = 30.0
+skill_2_cost = 40.0
+skill_2_cooldown = 12.0
+skill_1_desc = "Magecraft Bullet: Unleashes a radial magecraft burst. Mana 30, cooldown 6.0s."
+skill_2_desc = "Necromancy: Restores the linked Servant's HP and Mana. Mana 40, cooldown 12.0s."
+command_spell_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+np_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+passive_desc = "Master Mana 170, regeneration 8.0/s, vision 560. Mana upkeep from the contract is paid by this Master."
+signature_command_spell = "Sisigou Decree: Hunter's Mark"
+signature_command_spell_desc = "Marks and reveals enemy Servants while restoring the Servant's Mana. Overrides Servant autonomy."
+signature_style = 2
+master_trump_card = "Necromantic Origin Shot"
+trump_card_desc = "A cursed origin round that punches through the target line."
+trump_style = 2
+trump_card_cooldown = 55.0
+trump_card_mana_cost = 35.0
+strength = 14
+endurance = 13
+agility = 10
+mana_rank = 16
+luck = 30
+max_mana = 170.0
+leyline_affinity = 1.15
+leyline_linked = true

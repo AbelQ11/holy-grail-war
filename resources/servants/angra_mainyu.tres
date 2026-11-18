@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_daq0i"]
+
+[resource]
+script = ExtResource("1_daq0i")
+servant_id = "angra_mainyu"
+display_name = "Angra Mainyu"
+servant_class = 8
+description = "All the World's Evils. Reflects damage and punishes Rulers."
+strength = 20
+endurance = 25
+agility = 35
+mana_rank = 25
+noble_phantasm_rank = 40
+mana_regeneration = 7.0
+noble_phantasm_cost = 77.0
+attack_style = 1
+attack_mana_cost = 5.0
+attack_cooldown = 0.4
+attack_range = 110.0
+projectile_speed = 700.0
+melee_arc_degrees = 100.0
+critical_chance = 0.15
+skill_1_cost = 20.0
+skill_2_cost = 30.0
+skill_1_cooldown = 4.0
+skill_2_cooldown = 7.0
+skill_1_desc = "Cursed Arm: Temporarily boosts damage and movement speed. Mana 20, cooldown 4.0s."
+skill_2_desc = "Verg Avesta: Detonates an area attack around the Servant. Mana 30, cooldown 7.0s."
+skill_aoe_radius = 180.0
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+noble_phantasm_name = "Verg Avesta"
+noble_phantasm_style = 6
+noble_phantasm_desc = "Verg Avesta: Curses the Servant to reflect incoming damage for a short duration. Power 30, range 300, Mana 77, duration 5.0s."
+np_desc = "Verg Avesta: Curses the Servant to reflect incoming damage for a short duration. Power 30, range 300, Mana 77, duration 5.0s."
+passive_desc = "Passive class skills: Avenger, Oblivion Correction. STR 20 / END 25 / AGI 35 / MANA 25 / LCK 10 / NP 40. Upkeep 1.5 Mana/s."
+noble_phantasm_color = Color(0.45, 0.1, 0.15, 1)
+noble_phantasm_damage = 30.0
+noble_phantasm_range = 300.0
+noble_phantasm_duration = 5.0
+class_skills = PackedStringArray("Avenger", "Oblivion Correction")
+active_skills = PackedStringArray("Cursed Arm", "Verg Avesta")

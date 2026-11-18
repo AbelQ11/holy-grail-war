@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MasterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/master_data.gd" id="1_t5seg"]
+
+[resource]
+script = ExtResource("1_t5seg")
+master_id = "kiritsugu_emiya"
+display_name = "Kiritsugu Emiya"
+description = "Mage Killer. Time Alter mobility and a devastating Origin Bullet burst."
+vision_radius = 680.0
+active_skills = PackedStringArray("Time Alter", "Origin Bullet")
+skill_1_name = "Time Alter"
+skill_2_name = "Origin Bullet"
+skill_1_style = 2
+skill_2_style = 0
+skill_1_cost = 30.0
+skill_2_cost = 45.0
+skill_1_cooldown = 9.0
+skill_2_cooldown = 12.0
+skill_1_desc = "Time Alter: Greatly increases the Master's movement speed. Mana 30, cooldown 9.0s."
+skill_2_desc = "Origin Bullet: Unleashes a radial magecraft burst. Mana 45, cooldown 12.0s."
+command_spell_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+np_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+passive_desc = "Master Mana 140, regeneration 7.0/s, vision 680. Mana upkeep from the contract is paid by this Master."
+signature_command_spell = "Mage Killer's Decree"
+signature_command_spell_desc = "Forces a lethal tempo: hastes and empowers the Servant while overriding its autonomy."
+signature_style = 5
+master_trump_card = "Square Accel + Origin Bullet"
+trump_card_desc = "Accelerates time and fires an Origin Round that tears through a target line."
+trump_style = 2
+trump_card_mana_cost = 45.0
+strength = 10
+endurance = 11
+agility = 14
+mana_rank = 15
+luck = 20
+max_mana = 140.0
+mana_regeneration = 7.0
+leyline_linked = true

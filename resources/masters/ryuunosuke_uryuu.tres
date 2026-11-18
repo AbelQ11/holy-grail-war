@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MasterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/master_data.gd" id="1_6j4l1"]
+
+[resource]
+script = ExtResource("1_6j4l1")
+master_id = "ryuunosuke_uryuu"
+display_name = "Ryuunosuke Uryuu"
+description = "Serial killer Master. Sacrifices blood and Mana for chaotic bursts."
+vision_radius = 500.0
+active_skills = PackedStringArray("Blood Offering", "Carnival Frenzy")
+skill_1_name = "Blood Offering"
+skill_2_name = "Carnival Frenzy"
+skill_1_style = 4
+skill_2_style = 0
+skill_1_cost = 20.0
+skill_2_cost = 25.0
+skill_1_cooldown = 8.0
+skill_2_cooldown = 6.0
+skill_1_desc = "Blood Offering: Drains Mana from the nearest enemy Servant. Mana 20, cooldown 8.0s."
+skill_2_desc = "Carnival Frenzy: Unleashes a radial magecraft burst. Mana 25, cooldown 6.0s."
+command_spell_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+np_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+passive_desc = "Master Mana 100, regeneration 6.0/s, vision 500. Mana upkeep from the contract is paid by this Master."
+signature_command_spell = "Carnival Decree"
+signature_command_spell_desc = "A maddening decree that drives the Servant into a damage frenzy. Overrides Servant autonomy."
+signature_style = 5
+master_trump_card = "The Bloody Carnival"
+trump_card_desc = "A rain of gore and blades erupts around the battlefield."
+trump_style = 6
+trump_card_cooldown = 45.0
+trump_card_mana_cost = 30.0
+strength = 7
+endurance = 8
+agility = 10
+mana_rank = 10
+luck = 45
+max_mana = 100.0
+mana_regeneration = 6.0
+leyline_affinity = 0.9
+leyline_linked = true

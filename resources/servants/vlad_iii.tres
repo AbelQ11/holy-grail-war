@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_e44ba"]
+
+[resource]
+script = ExtResource("1_e44ba")
+servant_id = "vlad_iii"
+display_name = "Vlad III"
+servant_class = 2
+description = "Impaler of Wallachia. Durable Lancer with a field of blood stakes."
+vision_radius = 540.0
+strength = 38
+endurance = 44
+agility = 30
+mana_rank = 30
+luck = 20
+noble_phantasm_rank = 50
+max_mana = 140.0
+mana_regeneration = 7.0
+mana_upkeep_per_second = 3.2
+noble_phantasm_cost = 82.5
+attack_style = 1
+attack_damage = 25.0
+attack_mana_cost = 6.0
+attack_cooldown = 0.4
+attack_range = 150.0
+projectile_speed = 700.0
+melee_arc_degrees = 80.0
+critical_chance = 0.15
+skill_1_cost = 20.0
+skill_2_cost = 30.0
+skill_1_cooldown = 4.0
+skill_2_cooldown = 7.0
+skill_1_style = 3
+skill_2_style = 4
+skill_1_desc = "Protection of the Faith: Dashes forward, damaging enemies along the path. Mana 20, cooldown 4.0s."
+skill_2_desc = "Battle Continuation: Temporarily boosts damage and movement speed. Mana 30, cooldown 7.0s."
+skill_dash_distance = 220.0
+skill_aoe_radius = 180.0
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+noble_phantasm_name = "Kazikli Bey"
+noble_phantasm_style = 3
+noble_phantasm_desc = "Kazikli Bey: Detonates a large-area Noble Phantasm burst. Power 110, range 300, Mana 82, duration 4.0s."
+np_desc = "Kazikli Bey: Detonates a large-area Noble Phantasm burst. Power 110, range 300, Mana 82, duration 4.0s."
+passive_desc = "Passive class skills: Magic Resistance, Battle Continuation. STR 38 / END 44 / AGI 30 / MANA 30 / LCK 20 / NP 50. Upkeep 3.2 Mana/s."
+noble_phantasm_color = Color(0.75, 0.15, 0.2, 1)
+noble_phantasm_damage = 110.0
+noble_phantasm_range = 300.0
+class_skills = PackedStringArray("Magic Resistance", "Battle Continuation")
+active_skills = PackedStringArray("Protection of the Faith", "Battle Continuation", "Kazikli Bey")

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_8enc0"]
+
+[resource]
+script = ExtResource("1_8enc0")
+servant_id = "chiron"
+display_name = "Chiron"
+servant_class = 1
+description = "Centaur sage. Longest-range beam sniper with excellent vision."
+vision_radius = 650.0
+strength = 30
+endurance = 30
+agility = 46
+mana_rank = 35
+luck = 30
+noble_phantasm_rank = 50
+max_mana = 130.0
+mana_regeneration = 8.0
+mana_upkeep_per_second = 2.2
+noble_phantasm_cost = 82.5
+attack_mana_cost = 7.0
+attack_cooldown = 0.3
+attack_range = 900.0
+projectile_speed = 880.0
+melee_arc_degrees = 90.0
+critical_chance = 0.14
+skill_1_cost = 24.0
+skill_2_cost = 30.0
+skill_1_cooldown = 3.5
+skill_2_cooldown = 7.0
+skill_1_style = 0
+skill_2_style = 5
+skill_1_desc = "Blade Barrage: Fires a rapid multi-projectile barrage. Mana 24, cooldown 3.5s."
+skill_2_desc = "Clairvoyance: Scouting pulse that reveals enemy true names in range. Mana 30, cooldown 7.0s."
+skill_aoe_radius = 180.0
+barrage_projectiles = 6
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+noble_phantasm_name = "Antares Snipe"
+noble_phantasm_desc = "Antares Snipe: Fires a high-damage directional beam. Power 110, range 1200, Mana 82, duration 4.0s."
+np_desc = "Antares Snipe: Fires a high-damage directional beam. Power 110, range 1200, Mana 82, duration 4.0s."
+passive_desc = "Passive class skills: Independent Action, Magic Resistance. STR 30 / END 30 / AGI 46 / MANA 35 / LCK 30 / NP 50. Upkeep 2.2 Mana/s."
+noble_phantasm_color = Color(0.4, 0.85, 0.85, 1)
+noble_phantasm_damage = 110.0
+noble_phantasm_range = 1200.0
+class_skills = PackedStringArray("Independent Action", "Magic Resistance")
+active_skills = PackedStringArray("Blade Barrage", "Clairvoyance", "Antares Snipe")

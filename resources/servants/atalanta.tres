@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_erugp"]
+
+[resource]
+script = ExtResource("1_erugp")
+servant_id = "atalanta"
+display_name = "Atalanta"
+servant_class = 1
+description = "Huntress of Arcadia. Fastest archer, raining a wide arrow barrage."
+vision_radius = 650.0
+strength = 24
+endurance = 26
+agility = 55
+mana_rank = 25
+luck = 35
+noble_phantasm_rank = 45
+max_mana = 110.0
+mana_regeneration = 9.0
+mana_upkeep_per_second = 1.6
+noble_phantasm_cost = 79.75
+attack_damage = 15.0
+attack_mana_cost = 7.0
+attack_cooldown = 0.3
+attack_range = 900.0
+projectile_speed = 880.0
+melee_arc_degrees = 90.0
+critical_chance = 0.14
+skill_1_cost = 24.0
+skill_2_cost = 30.0
+skill_1_cooldown = 3.5
+skill_2_cooldown = 7.0
+skill_1_style = 0
+skill_2_style = 5
+skill_1_desc = "Blade Barrage: Fires a rapid multi-projectile barrage. Mana 24, cooldown 3.5s."
+skill_2_desc = "Clairvoyance: Scouting pulse that reveals enemy true names in range. Mana 30, cooldown 7.0s."
+skill_aoe_radius = 180.0
+barrage_projectiles = 10
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+noble_phantasm_name = "Phoebus Catastrophe"
+noble_phantasm_style = 4
+noble_phantasm_desc = "Phoebus Catastrophe: Unleashes a wide barrage of Noble Phantasm projectiles. Power 45, range 900, Mana 79, duration 4.0s."
+np_desc = "Phoebus Catastrophe: Unleashes a wide barrage of Noble Phantasm projectiles. Power 45, range 900, Mana 79, duration 4.0s."
+passive_desc = "Passive class skills: Independent Action, Magic Resistance. STR 24 / END 26 / AGI 55 / MANA 25 / LCK 35 / NP 45. Upkeep 1.6 Mana/s."
+noble_phantasm_color = Color(0.45, 0.9, 0.55, 1)
+noble_phantasm_damage = 45.0
+noble_phantasm_range = 900.0
+class_skills = PackedStringArray("Independent Action", "Magic Resistance")
+active_skills = PackedStringArray("Blade Barrage", "Clairvoyance", "Phoebus Catastrophe")

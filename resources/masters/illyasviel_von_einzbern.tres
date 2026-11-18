@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="MasterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/master_data.gd" id="1_3q86v"]
+
+[resource]
+script = ExtResource("1_3q86v")
+master_id = "illyasviel_von_einzbern"
+display_name = "Illyasviel von Einzbern"
+description = "Holy Grail vessel. Enormous Mana reserves, healing wishcraft, and a protective dress."
+vision_radius = 620.0
+active_skills = PackedStringArray("Wishcraft", "Dress of Heaven")
+skill_1_name = "Wishcraft"
+skill_2_name = "Dress of Heaven"
+skill_1_style = 1
+skill_2_style = 5
+skill_1_cost = 50.0
+skill_2_cost = 60.0
+skill_1_cooldown = 12.0
+skill_2_cooldown = 15.0
+skill_1_desc = "Wishcraft: Restores the linked Servant's HP and Mana. Mana 50, cooldown 12.0s."
+skill_2_desc = "Dress of Heaven: Places a protective shield on the linked Servant. Mana 60, cooldown 15.0s."
+command_spell_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+np_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+passive_desc = "Master Mana 260, regeneration 12.0/s, vision 620. Mana upkeep from the contract is paid by this Master."
+signature_command_spell = "Einzbern Decree: Wishcraft"
+signature_command_spell_desc = "A wishcraft surge that refills the Servant's Mana and coats it in a shield. Overrides Servant autonomy."
+signature_style = 4
+master_trump_card = "Dress of Heaven"
+trump_card_desc = "The Holy Grail vessel's dress restores and shields the Servant."
+trump_card_cooldown = 55.0
+trump_card_mana_cost = 45.0
+endurance = 6
+agility = 8
+mana_rank = 45
+luck = 20
+max_mana = 260.0
+mana_regeneration = 12.0
+leyline_affinity = 1.5
+leyline_linked = true

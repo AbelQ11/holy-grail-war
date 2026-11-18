@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_422wa"]
+
+[resource]
+script = ExtResource("1_422wa")
+servant_id = "semiramis"
+display_name = "Semiramis"
+servant_class = 5
+description = "Assassin of Red. High-Mana assassin who turns the battlefield into her garden."
+vision_radius = 550.0
+strength = 22
+endurance = 25
+agility = 40
+mana_rank = 50
+luck = 25
+noble_phantasm_rank = 55
+max_mana = 180.0
+mana_regeneration = 10.0
+mana_upkeep_per_second = 3.8
+noble_phantasm_cost = 85.25
+attack_style = 1
+attack_damage = 17.0
+attack_mana_cost = 4.0
+attack_cooldown = 0.32
+attack_range = 100.0
+projectile_speed = 700.0
+melee_arc_degrees = 90.0
+critical_multiplier = 2.2
+critical_chance = 0.38
+skill_1_cost = 15.0
+skill_2_cost = 30.0
+skill_1_cooldown = 9.0
+skill_2_cooldown = 7.0
+skill_1_style = 2
+skill_2_style = 3
+skill_1_desc = "Presence Concealment: Enters Presence Concealment, fading from sight until attacking. Mana 15, cooldown 9.0s."
+skill_2_desc = "Familiar Scouting: Dashes forward, damaging enemies along the path. Mana 30, cooldown 7.0s."
+skill_dash_distance = 200.0
+skill_aoe_radius = 180.0
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+stealth_duration = 4.0
+noble_phantasm_name = "Hanging Gardens of Babylon"
+noble_phantasm_style = 3
+noble_phantasm_desc = "Hanging Gardens of Babylon: Detonates a large-area Noble Phantasm burst. Power 115, range 340, Mana 85, duration 4.0s."
+np_desc = "Hanging Gardens of Babylon: Detonates a large-area Noble Phantasm burst. Power 115, range 340, Mana 85, duration 4.0s."
+passive_desc = "Passive class skills: Presence Concealment, Independent Action. STR 22 / END 25 / AGI 40 / MANA 50 / LCK 25 / NP 55. Upkeep 3.8 Mana/s."
+noble_phantasm_color = Color(0.6, 0.35, 0.8, 1)
+noble_phantasm_damage = 115.0
+noble_phantasm_range = 340.0
+class_skills = PackedStringArray("Presence Concealment", "Independent Action")
+active_skills = PackedStringArray("Presence Concealment", "Familiar Scouting", "Hanging Gardens")

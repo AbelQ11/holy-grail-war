@@ -1,0 +1,58 @@
+[gd_resource type="Resource" script_class="ServantData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/servant_data.gd" id="1_8sa5j"]
+
+[resource]
+script = ExtResource("1_8sa5j")
+servant_id = "avicebron"
+display_name = "Avicebron"
+servant_class = 4
+description = "Golem sculptor. Heavy Caster scaling with a durable territorial support NP."
+vision_radius = 600.0
+strength = 14
+endurance = 20
+agility = 18
+mana_rank = 55
+luck = 20
+noble_phantasm_rank = 42
+max_mana = 200.0
+mana_regeneration = 11.0
+mana_upkeep_per_second = 2.8
+noble_phantasm_cost = 78.1
+attack_damage = 13.0
+attack_mana_cost = 7.0
+attack_cooldown = 0.5
+attack_range = 800.0
+projectile_speed = 620.0
+melee_arc_degrees = 90.0
+critical_chance = 0.05
+skill_1_cost = 30.0
+skill_2_cost = 30.0
+skill_1_cooldown = 2.5
+skill_2_cooldown = 7.0
+skill_1_style = 1
+skill_2_style = 5
+skill_1_desc = "Golem Transmutation: Places a persistent magic-circle trap that pulses damage. Mana 30, cooldown 2.5s."
+skill_2_desc = "Clairvoyance: Scouting pulse that reveals enemy true names in range. Mana 30, cooldown 7.0s."
+skill_aoe_radius = 180.0
+barrage_interval = 0.07
+barrage_spread_degrees = 12.0
+spell_damage_multiplier = 1.3
+territory_mana_bonus = 15.0
+territory_spell_bonus = 0.5
+trap_cast_range = 230.0
+trap_radius = 65.0
+trap_damage = 20.0
+trap_duration = 12.0
+trap_pulse_interval = 0.9
+noble_phantasm_name = "Golem Keter Malkuth"
+noble_phantasm_style = 5
+noble_phantasm_desc = "Golem Keter Malkuth: Heals and shields allied units within range. Power 50, range 280, Mana 78, duration 6.0s."
+np_desc = "Golem Keter Malkuth: Heals and shields allied units within range. Power 50, range 280, Mana 78, duration 6.0s."
+passive_desc = "Passive class skills: Territory Creation, Item Construction. STR 14 / END 20 / AGI 18 / MANA 55 / LCK 20 / NP 42. Upkeep 2.8 Mana/s."
+noble_phantasm_color = Color(0.7, 0.55, 0.35, 1)
+noble_phantasm_damage = 50.0
+noble_phantasm_range = 280.0
+noble_phantasm_duration = 6.0
+class_skills = PackedStringArray("Territory Creation", "Item Construction")
+active_skills = PackedStringArray("Golem Transmutation", "Clairvoyance", "Golem Keter Malkuth")

@@ -1,0 +1,10 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+AGENTS.md
+
+# IDE / local metadata
+.idea/
+
+# Agent task reports
+reports/

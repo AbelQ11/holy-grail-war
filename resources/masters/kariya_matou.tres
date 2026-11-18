@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="MasterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/master_data.gd" id="1_ov1e4"]
+
+[resource]
+script = ExtResource("1_ov1e4")
+master_id = "kariya_matou"
+display_name = "Kariya Matou"
+description = "Matou Master sustained by Crest Worms. Converts HP into power for Berserker."
+vision_radius = 540.0
+active_skills = PackedStringArray("Crest Worm Surge", "Berserker Command")
+skill_1_name = "Crest Worm Surge"
+skill_2_name = "Berserker Command"
+skill_1_style = 2
+skill_2_style = 5
+skill_1_cost = 20.0
+skill_1_cooldown = 8.0
+skill_2_cooldown = 12.0
+skill_1_desc = "Crest Worm Surge: Greatly increases the Master's movement speed. Mana 20, cooldown 8.0s."
+skill_2_desc = "Berserker Command: Places a protective shield on the linked Servant. Mana 35, cooldown 12.0s."
+command_spell_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+np_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+passive_desc = "Master Mana 130, regeneration 8.0/s, vision 540. Mana upkeep from the contract is paid by this Master."
+signature_command_spell = "Matou Decree: Consume"
+signature_command_spell_desc = "The Crest Worms surge, empowering the Servant at a painful cost. Overrides Servant autonomy."
+signature_style = 5
+master_trump_card = "Zouken's Crest Worm Rupture"
+trump_card_desc = "Sacrifices Master HP to instantly fill the Servant's Mana and NP charge."
+trump_style = 5
+trump_card_cooldown = 70.0
+strength = 8
+endurance = 7
+agility = 12
+mana_rank = 14
+luck = 25
+max_mana = 130.0
+leyline_linked = true

@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MasterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/data/master_data.gd" id="1_rqp3c"]
+
+[resource]
+script = ExtResource("1_rqp3c")
+master_id = "darnic_yggdmillennia"
+display_name = "Darnic Yggdmillennia"
+description = "Black Faction patriarch. Shields his Servant and drains enemy Mana."
+vision_radius = 560.0
+active_skills = PackedStringArray("Yggdmillennia Command", "Spiritual Evocation")
+skill_1_name = "Yggdmillennia Command"
+skill_2_name = "Spiritual Evocation"
+skill_1_style = 5
+skill_2_style = 4
+skill_1_cost = 45.0
+skill_2_cost = 40.0
+skill_1_cooldown = 12.0
+skill_2_cooldown = 14.0
+skill_1_desc = "Yggdmillennia Command: Places a protective shield on the linked Servant. Mana 45, cooldown 12.0s."
+skill_2_desc = "Spiritual Evocation: Drains Mana from the nearest enemy Servant. Mana 40, cooldown 14.0s."
+command_spell_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+np_desc = "3 Command Spells per match. Warp the Servant to the Master and trigger an emergency HP/Mana surge."
+passive_desc = "Master Mana 220, regeneration 10.0/s, vision 560. Mana upkeep from the contract is paid by this Master."
+signature_command_spell = "Yggdmillennia Decree"
+signature_command_spell_desc = "A patriarch's command that shields the Servant and forces absolute compliance."
+signature_style = 3
+master_trump_card = "Spiritual Evocation: Dracula's Legacy"
+trump_card_desc = "Drains the life and Mana of nearby enemies to restore the Servant."
+trump_style = 8
+trump_card_mana_cost = 40.0
+strength = 10
+endurance = 12
+agility = 7
+mana_rank = 30
+luck = 20
+max_mana = 220.0
+mana_regeneration = 10.0
+leyline_affinity = 1.4
+leyline_linked = true
