@@ -108,20 +108,30 @@ func _run() -> void:
 
 	var damage_seen: bool = false
 	var movement_seen: bool = false
-	await create_timer(5.0).timeout
-	for tracked: Dictionary in ai_units:
-		var servant: Variant = tracked["ref"].get_ref()
-		if servant == null or not is_instance_valid(servant):
-			damage_seen = true
-			continue
-		if servant.health < float(tracked["health"]) - 0.1:
-			damage_seen = true
-		if servant.position.distance_to(tracked["position"]) > 10.0:
-			movement_seen = true
+	var events: Array[String] = []
+	# Sample during the war tick instead of only after it, so an early victory +
+	# lobby reset cannot hide the movement that already happened.
+	var elapsed: float = 0.0
+	while elapsed < 5.0:
+		await create_timer(0.25).timeout
+		elapsed += 0.25
+		if not is_instance_valid(arena) or bool(arena.is_queued_for_deletion()):
+			break
+		events = arena.call("get_events") as Array[String]
+		for tracked: Dictionary in ai_units:
+			var tracked_servant: Variant = tracked["ref"].get_ref()
+			if tracked_servant == null or not is_instance_valid(tracked_servant):
+				damage_seen = true
+				continue
+			if tracked_servant.health < float(tracked["health"]) - 0.1:
+				damage_seen = true
+			if tracked_servant.position.distance_to(tracked["position"]) > 10.0:
+				movement_seen = true
 	_check(movement_seen, "AI Servants change position during the 5-second war tick")
 	_check(damage_seen, "AI Servants deal or receive damage during the 5-second war tick")
 
-	var events: Array[String] = arena.call("get_events")
+	if is_instance_valid(arena) and not arena.is_queued_for_deletion():
+		events = arena.call("get_events") as Array[String]
 	_check(not events.is_empty(), "in-game event ticker captures match activity")
 
 	# Leave the match and return to the main menu.
